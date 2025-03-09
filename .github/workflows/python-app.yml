@@ -1,0 +1,26 @@
+name: Weather API Test
+
+on:
+  schedule:
+    - cron: "0 6 * * *"  # 매일 오전 6시에 실행 (UTC 기준)
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v3
+
+      - name: Python 설정
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.9"
+
+      - name: 의존성 설치
+        run: pip install requests pytest
+
+      - name: 날씨 API 테스트 실행
+        run: pytest weather_test_api.py --maxfail=1 --disable-warnings

@@ -23,7 +23,7 @@ jobs:
         run: pip install requests
 
       - name: 날씨 API 테스트 실행
-        run: python test_weather_api.py
+        run: pytest test_weather_api.py --maxfail=1 --disable-warnings
 
       - name: 결과를 이메일로 전송
         uses: dawidd6/action-send-mail@v3

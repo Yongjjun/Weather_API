@@ -23,4 +23,4 @@ jobs:
         run: pip install requests pytest
 
       - name: 날씨 API 테스트 실행
-        run: pytest weather_test_api.py --maxfail=1 --disable-warnings
+        run: pytest test_weather_api.py --maxfail=1 --disable-warnings

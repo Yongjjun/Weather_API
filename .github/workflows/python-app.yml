@@ -23,7 +23,7 @@ jobs:
         run: pip install requests
 
       - name: 날씨 API 테스트 실행
-        run: python weather_test.py
+        run: python test_weather_api.py
 
       - name: 결과를 이메일로 전송
         uses: dawidd6/action-send-mail@v3
@@ -34,6 +34,6 @@ jobs:
           password: ${{ secrets.EMAIL_PASS }}
           subject: "매일 아침 6시 - 오늘의 날씨"
           body: "오늘의 날씨 데이터입니다. 첨부된 JSON 파일을 확인하세요."
-          to: "your_email@example.com"
+          to: "jschang0407@gmail.com"
           from: "GitHub Actions"
           attachments: weather_result.json

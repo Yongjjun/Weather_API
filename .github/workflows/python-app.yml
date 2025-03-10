@@ -36,4 +36,4 @@ jobs:
           body: "Hello, this is a test email!"
           to: "jschang0407@naver.com"
           from: ${{ secrets.EMAIL_USER }}
-#          attachments: weather_result.json
+          attachments: weather_result.json

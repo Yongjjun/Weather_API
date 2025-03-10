@@ -25,15 +25,15 @@ jobs:
       - name: 날씨 API 테스트 실행
         run: pytest test_weather_api.py
 
-      - name: 결과를 이메일로 전송
+      - name: Send Email
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.gmail.com
+          server_address: smtp.naver.com
           server_port: 587
-          username: ${{ secrets.EMAIL_USER }}
-          password: ${{ secrets.EMAIL_PASS }}
-          subject: "매일 아침 6시 - 오늘의 날씨"
-          body: "오늘의 날씨 데이터입니다. 첨부된 JSON 파일을 확인하세요."
-          to: "jschang0407@gmail.com"
-          from: "GitHub Actions"
+          username: ${{ secrets.EMAIL_USER }}  # 네이버 아이디 (이메일 주소 전체)
+          password: ${{ secrets.EMAIL_PASS }}  # 네이버 비밀번호
+          subject: "Test Email"
+          body: "This is a test email."
+          to: "받는사람@naver.com"
+          from: "보내는사람@naver.com"
           attachments: weather_result.json

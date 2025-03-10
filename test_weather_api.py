@@ -1,9 +1,13 @@
+import json
 import pytest
 import requests
 
 # API URL 및 파라미터 설정
 API_KEY = "2c5279c8fb164ae09bf112717250903"
 url = "http://api.weatherapi.com/v1/current.json"
+
+# 날씨 데이터를 저장할 리스트
+all_weather_data = []
 
 @pytest.mark.parametrize("city", ["Seoul", "New York", "Tokyo"])
 # 날씨 API가 동작하는지 테스트
@@ -25,6 +29,21 @@ def test_weather_api(city):
     assert -50 <= temp <= 50, f"비정상적인 온도 값! {temp}°C"
 
     print(f"{city} 현재 온도: {temp}°C")
+
+    # 날씨 데이터를 JSON 파일로 저장
+    weather_info = {
+        "city": city,
+        "temperature": temp,
+        "condition": data["current"]["condition"]["text"],
+        "humidity": data["current"]["humidity"]
+    }
+
+    # 리스트에 날씨 정보 추가
+    all_weather_data.append(weather_info)
+
+    # weather_result.json 파일에 데이터 추가
+    with open('weather_result.json', 'w', encoding='utf-8') as f:
+        json.dump(all_weather_data, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
     pytest.main()

@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Seoul",
+        "temperature": 4.3,
+        "condition": "Mist",
+        "humidity": 65
+    },
+    {
+        "city": "New York",
+        "temperature": 10.6,
+        "condition": "Sunny",
+        "humidity": 35
+    },
+    {
+        "city": "Tokyo",
+        "temperature": 9.0,
+        "condition": "Partly cloudy",
+        "humidity": 66
+    }
+]

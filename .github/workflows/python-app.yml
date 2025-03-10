@@ -30,10 +30,10 @@ jobs:
         with:
           server_address: smtp.naver.com
           server_port: 587
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
+          username: ${{ secrets.EMAIL_USER }}
+          password: ${{ secrets.EMAIL_PASS }}
           subject: "GitHub Actions Test"
           body: "Hello, this is a test email!"
           to: "jschang0407@naver.com"
-          from: "jschang0407@naver.com"
-#          attachments: weather_result.json
+          from: "example@naver.com"
+          attachments: weather_result.json

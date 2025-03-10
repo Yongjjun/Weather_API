@@ -30,10 +30,10 @@ jobs:
         with:
           server_address: smtp.naver.com
           server_port: 587
-          username: ${{ secrets.EMAIL_USER }}  # 네이버 아이디 (이메일 주소 전체)
-          password: ${{ secrets.EMAIL_PASS }}  # 네이버 비밀번호
-          subject: "Test Email"
-          body: "This is a test email."
-          to: "받는사람@naver.com"
-          from: "보내는사람@naver.com"
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "GitHub Actions Test"
+          body: "Hello, this is a test email!"
+          to: "jschang0407@naver.com"
+          from: "jschang0407@naver.com"
           attachments: weather_result.json

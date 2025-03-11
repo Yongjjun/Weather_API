@@ -29,7 +29,7 @@ def test_weather_api(city):
     temp = data["current"]["temp_c"]
     assert -50 <= temp <= 50, f"비정상적인 온도 값! {temp}°C"
 
-    print(f"{city} 현재 온도: {temp}°C")
+    # print(f"{city} 현재 온도: {temp}°C")
 
     weather_info = {
         "city": city,

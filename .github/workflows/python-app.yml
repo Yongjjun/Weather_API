@@ -25,7 +25,7 @@ jobs:
         run: pip install requests pytest
 
       - name: 날씨 API 테스트 실행
-        run: pytest test_weather_api.py
+        run: pytest test_weather_api2.py
 
       - name: Send Email
         uses: dawidd6/action-send-mail@v3

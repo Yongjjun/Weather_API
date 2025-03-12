@@ -7,8 +7,9 @@ from dotenv import load_dotenv
 
 # 환경 변수 로드
 load_dotenv()
-API_KEY = os.getenv("API_KEY")
 
+# API URL 및 파라미터 설정
+API_KEY = os.getenv("API_KEY") # .env 또는 GitHub Secrets에서 API_KEY 가져오기
 # API URL 설정
 url = "http://api.weatherapi.com/v1/current.json"
 

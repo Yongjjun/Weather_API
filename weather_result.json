@@ -1,146 +1,38 @@
 [
     {
         "city": "Seoul",
-        "temperature": 5.2,
+        "temperature": 9.1,
         "condition": "Clear",
-        "humidity": 81
+        "humidity": 40
     },
     {
         "city": "New York",
-        "temperature": 11.7,
+        "temperature": 5.6,
         "condition": "Sunny",
-        "humidity": 41
+        "humidity": 53
     },
     {
         "city": "Tokyo",
-        "temperature": 11.1,
-        "condition": "Light rain",
-        "humidity": 87
+        "temperature": 7.3,
+        "condition": "Light rain shower",
+        "humidity": 93
     },
     {
         "city": "Seoul",
-        "temperature": 5.2,
+        "temperature": 9.1,
         "condition": "Clear",
-        "humidity": 81
+        "humidity": 40
     },
     {
         "city": "New York",
-        "temperature": 11.7,
+        "temperature": 5.6,
         "condition": "Sunny",
-        "humidity": 41
+        "humidity": 53
     },
     {
         "city": "Tokyo",
-        "temperature": 11.1,
-        "condition": "Light rain",
-        "humidity": 87
-    },
-    {
-        "city": "Seoul",
-        "temperature": 5.2,
-        "condition": "Clear",
-        "humidity": 81
-    },
-    {
-        "city": "New York",
-        "temperature": 11.7,
-        "condition": "Sunny",
-        "humidity": 41
-    },
-    {
-        "city": "Tokyo",
-        "temperature": 11.1,
-        "condition": "Light rain",
-        "humidity": 87
-    },
-    {
-        "city": "Seoul",
-        "temperature": 5.2,
-        "condition": "Clear",
-        "humidity": 81
-    },
-    {
-        "city": "New York",
-        "temperature": 11.7,
-        "condition": "Sunny",
-        "humidity": 41
-    },
-    {
-        "city": "Tokyo",
-        "temperature": 11.1,
-        "condition": "Light rain",
-        "humidity": 87
-    },
-    {
-        "city": "Seoul",
-        "temperature": 5.2,
-        "condition": "Clear",
-        "humidity": 81
-    },
-    {
-        "city": "New York",
-        "temperature": 11.7,
-        "condition": "Sunny",
-        "humidity": 41
-    },
-    {
-        "city": "Tokyo",
-        "temperature": 11.1,
-        "condition": "Light rain",
-        "humidity": 87
-    },
-    {
-        "city": "Seoul",
-        "temperature": 5.2,
-        "condition": "Clear",
-        "humidity": 81
-    },
-    {
-        "city": "New York",
-        "temperature": 11.7,
-        "condition": "Sunny",
-        "humidity": 41
-    },
-    {
-        "city": "Tokyo",
-        "temperature": 11.1,
-        "condition": "Light rain",
-        "humidity": 87
-    },
-    {
-        "city": "Seoul",
-        "temperature": 5.2,
-        "condition": "Clear",
-        "humidity": 81
-    },
-    {
-        "city": "New York",
-        "temperature": 11.7,
-        "condition": "Sunny",
-        "humidity": 41
-    },
-    {
-        "city": "Tokyo",
-        "temperature": 11.1,
-        "condition": "Light rain",
-        "humidity": 87
-    },
-    {
-        "city": "Seoul",
-        "temperature": 5.2,
-        "condition": "Clear",
-        "humidity": 81
-    },
-    {
-        "city": "New York",
-        "temperature": 11.7,
-        "condition": "Sunny",
-        "humidity": 41
-    },
-    {
-        "city": "Tokyo",
-        "temperature": 11.1,
-        "condition": "Light rain",
-        "humidity": 87
+        "temperature": 7.3,
+        "condition": "Light rain shower",
+        "humidity": 93
     }
 ]

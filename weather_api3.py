@@ -11,6 +11,8 @@ def get_coordinates():
 
     response = requests.get(url, headers=headers)
 
+    # 테스트
+
     if response.status_code == 200:
         data = response.json()
 

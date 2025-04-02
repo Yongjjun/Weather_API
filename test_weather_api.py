@@ -27,7 +27,7 @@ def test_weather_api(city):
 
     # 기온 범위 체크 (-50도 ~ 50도)
     assert -50 <= temp <= 50, f"비정상적인 온도 값! {temp}°C"
-
+    print("쏘야유닛") # 우디가 수정함
     print(f"{city} 현재 온도: {temp}°C")
 
     # 날씨 데이터를 JSON 파일로 저장

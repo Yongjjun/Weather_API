@@ -39,6 +39,6 @@ jobs:
           password: ${{ secrets.EMAIL_PASS }}
           subject: "GitHub Actions Test"
           body: "Hello, this is a test email!"
-          to: "jschang0407@naver.com"
+          to: "yongjun0407@naver.com"
           from: ${{ secrets.EMAIL_USER }}
           attachments: weather_result.json
